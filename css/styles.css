@@ -1,0 +1,296 @@
+@keyframes shadow {
+    from {text-shadow: 0 0 3px rgb(165, 55, 156);}
+    50% {text-shadow: 0 0 30px rgb(165, 55, 156);}
+    to {text-shadow: 0 0 3px rgb(165, 55, 156);}
+} 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: linear-gradient(#0d1b2a,#415a77,#edf2f4);
+    font-size: 1.3rem;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#edf2f4,#415a77,#0d1b2a);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+.bg_video {
+    object-fit: cover;
+    width: 100%;
+    min-width: 685px;
+}
+.head_text {
+    position: absolute;
+    align-self: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+}
+.nameh1 {
+    text-align: center;
+    color: #ffd54f;
+}
+.abs_h1 {
+    position: absolute;
+    top: 0px;
+}
+.product_img {
+    height: 35%;
+}
+.abs_img {
+    position: absolute;
+    top: 120px;
+}
+.product_text {
+    position: absolute;
+    bottom: 90px;
+}
+.buy_button {
+    background-image: linear-gradient(90deg, #90dbf4,#cfbaf0,#fde4cf);
+    padding: 17px 20px 20px;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px 0 #736357;
+    color: #0d1b2a;
+    font-weight: bold;
+}
+.abs_btn {
+    position: absolute;
+    bottom: 10px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+} 
+.ingridients {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    border-style: double;
+    margin: 2%;
+    align-items: center;
+    padding: 10px;
+}
+.three_items {
+    width: 30%;
+    margin: 1.5%;
+    box-sizing: border-box;
+    color:aliceblue;
+}
+.lyst_img {
+    width: 30%;
+    max-width: fit-content;
+    margin: 20% 1.5%;
+}
+.lvlUp_ingridients {
+    margin: 20px 10px 40px;
+}
+.sec_btn {
+    display: block;
+    margin-left: 46%;
+    margin-top: 3%;
+}
+.opinions {
+    box-sizing: border-box;
+}
+.slider {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.opinion {
+    margin: 1.5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.text_op {
+    max-width: 900px;
+    line-height: 1.5;
+    color: aliceblue;
+}
+.photo_customer {
+    width: 200px;
+}
+.fio {
+    font-weight: bold;
+    color: rgb(255, 238, 203);
+    margin: 15px;
+}
+.doctor_promo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.photo_doctor {
+    max-width: fit-content;
+    width: 50%;
+    height: fit-content;
+}
+.about_lvlUp {
+    width: 40%;
+    line-height: 2.5;
+    margin: 3% 10%;
+    text-indent: 30px;
+    color: #0d1b2a;
+}
+.short_ul {
+    display: flex;
+    list-style-type: circle;
+    text-align: center;
+    width: 100%;
+    margin: 3% auto;
+}
+.short_li {
+    width: 30%;
+    margin: 2%;
+}
+.up_div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_form {
+    display: flex;
+    flex-direction: column;
+}
+.form_div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.old_price {
+    text-decoration: line-through;
+    width: 45%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #455A64;
+    margin-top: 100px;
+}
+.new_price {
+    width: 45%;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    color: #125f25;
+    margin-top: 15px;
+    animation: shadow 2s infinite ease-in-out;
+}
+.timer {
+    width: 350px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto 40px;
+}
+input {
+    margin: 10% 0;
+    font-size: 1.5rem;
+}
+.bot_img {
+    width: 200px;
+}
+.th_btn {
+    border-style: none;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.ingr_img {
+    width: 80px;
+    height: 80px;
+}
+.ingr_about {
+    margin: auto 20px;
+}
+.footer {
+    padding-bottom: 20px;
+}
+.buy_button:hover {
+    background-image: none;
+    background-color: #550f4f;
+    color: #ffd54f;
+    box-shadow: inset 0 -3px 0 #44382e;
+}
+@media(max-width: 800px) {
+    .container {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .product_img {
+        height: 25%;
+    }
+    .ingr_img {
+        width: 40px;
+        height: 40px;
+    }
+    .item {
+        padding: 2%;
+        flex-direction: column;
+    }
+    .ingr_about {
+        margin: auto;
+        text-align: center;
+    }
+    .sec_btn {
+        margin-left: 38%;
+    }
+    .photo_customer {
+        width: 130px;
+    }
+    .text_op {
+        max-width: 350px;
+        line-height: 1.5;
+    }
+    .doctor_promo {
+        flex-direction: column;
+    }
+    .photo_doctor {
+        margin-right: 20px;
+        width: 75%;
+        margin-left: 50px;
+    }
+    .about_lvlUp {
+        margin: auto 20px auto 10px;
+        width: 100%;
+        line-height: 2;
+        ;
+    }
+    .short_ul {
+        list-style-type: none;
+    }
+    .short_li {
+        margin: 0;
+    }
+    input {
+        font-size: 1rem;
+    }
+    .bot_img {
+        width: 150px;
+    }
+}

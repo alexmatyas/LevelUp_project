@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
+    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script>
+        $(function () {
+	        var austDay = new Date();
+            austDay.setMinutes(austDay.getMinutes()+30)
+	        $('#defaultCountdown').countdown({until: austDay, format: 'HMS'});
+            $('#year').text(austDay.getFullYear());
+
+        });
+    </script>
+    <link rel="stylesheet" href="css/itc-slider.min.css">
+    <script type="text/javascript" src="js/itc-slider.min.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="promo">
+            <video class="bg_video" src="video/pexels-rostislav-uzunov-7385122.mp4" autoplay muted loop></video>
+            <div class="head_text">
+                <h1 class="nameh1 abs_h1">LevelUp</h1>
+                <img class="product_img abs_img" src="img/prod.png" alt="LevelUp_product">
+                <ul class="product_text">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Fugit illum vero suscipit minima hic sed exercitationem id.</li>
+                <li>Unde, iure quasi nobis est quo veniam totam quos dignissimos libero.</li>
+            </ul>
+            <a class="buy_button abs_btn" href="#buy">Заказать</a>
+            </div>
+        </header>
+        <main class="about">
+            <section class="lvlUp_ingridients">
+                <div class="ingridients">
+                    <div class="three_items">
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="first_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="second_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="third_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                    </div>
+                    <img class="product_img lyst_img" src="img/prod.png" alt="LevelUp_product">
+                    <div class="three_items">
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="fourth_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="fifth_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                        <div class="item">
+                            <img class="ingr_img" src="img/ingr.png" alt="sixth_ingr">
+                            <p class="ingr_about">Mollitia adipisci facilis voluptatum aut ipsam corporis.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="buy_button sec_btn" href="#buy">Заказать</a>
+            </section>
+            <section class="opinions itc-slider" data-slider="itc-slider">
+                <div class="itc-slider__wrapper">
+                    <div class="slider itc-slider__items">
+                        <div class="opinion first_op itc-slider__item">
+                            <img class="photo_customer" src="img/doctor2.png" alt="first_customer">
+                            <span class="fio">Lorem Ipsum Dolor</span>
+                            <p class="text_op">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus autem accusantium, voluptas, atque omnis voluptates eius asperiores ducimus aliquid officia minima velit, impedit in nulla eveniet modi neque sunt tempore.</p>
+                        </div>
+                        <div class="opinion second_op itc-slider__item">
+                            <img class="photo_customer" src="img/doctor2.png" alt="second_customer">
+                            <span class="fio">Ipsum Dolor Lorem</span>
+                            <p class="text_op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas soluta, ab deleniti voluptatum mollitia sed a quis perspiciatis necessitatibus eius cumque, corrupti, pariatur incidunt adipisci! Error nemo laborum sunt.</p>
+                        </div>
+                        <div class="opinion third_op itc-slider__item">
+                            <img class="photo_customer" src="img/doctor2.png" alt="third_customer">
+                            <span class="fio">Ipsum Lorem Dolor</span>
+                            <p class="text_op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quidem rerum iusto dolor quibusdam iste illo architecto vel sapiente nisi. Vitae corrupti earum voluptate accusantium beatae saepe natus commodi perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+            </section>
+            <section class="doctor_promo">
+                <img class="photo_doctor" src="img/doctor1.png" alt="doctor">
+                <p class="about_lvlUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus autem accusantium, voluptas, atque omnis voluptates eius asperiores ducimus aliquid officia minima velit, impedit in nulla eveniet modi neque sunt tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quaerat tenetur itaque temporibus aspernatur odit adipisci ab eligendi dolor, nisi magni ducimus aperiam amet! Sequi est iste omnis ab natus!</p>
+                <ul class="short_ul">
+                    <li class="short_li">Ducimus aliquid</li>
+                    <li class="short_li">Minima velit</li>
+                    <li class="short_li">Nulla eveniet modi</li>
+                </ul>
+                <a class="buy_button sec_btn" href="#buy">Заказать</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="up_div">
+                <h1 class="nameh1">LevelUp</h1>
+                <div class="timer" id="defaultCountdown"></div>
+                <span class="old_price">1000000$</span>
+                <span class="new_price">999$</span>
+            </div>
+            <div class="form_div">
+                <form id="buy" class="input_form" action="">
+                    <label for="fio">Ваше имя:</label>
+                    <input type="text" placeholder="Евграф" name="customer_fio" id="fio">
+                    <label for="phone">Номер телефона:</label>
+                    <input type="number" placeholder="89991112233" name="customer_phone" id="phone">
+                    <input type="submit" class="buy_button th_btn" value="Заказать!">
+                </form>
+                <img class="product_img bot_img" src="img/prod.png" alt="LevelUp_product">
+            </div>    
+        </footer>
+    </div> 
+</body>
+</html>
